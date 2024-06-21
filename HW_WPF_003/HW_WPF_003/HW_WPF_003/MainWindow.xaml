@@ -1,0 +1,341 @@
+﻿<Window x:Class="HW_WPF_003.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:HW_WPF_003"
+        mc:Ignorable="d"
+        Title="My Teams" Height="550" Width="900">
+    <DockPanel LastChildFill="True">
+        <Grid Background="Black"
+               DockPanel.Dock="Top">
+            <Border Background="#FF353131"
+                    Margin="10"
+                    MaxWidth="300"
+                    Padding="4" 
+                    CornerRadius="10">
+                <TextBox
+                     FontSize="18"
+                     Foreground="White"
+                     BorderThickness="0"
+                     Background="#FF353131"/>
+            </Border>
+        </Grid>
+
+        <Label Content="Menu"
+               Background="Black"
+               Foreground="White"
+               DockPanel.Dock="Left"/>
+
+        <Grid  Background="#FF353131"
+               DockPanel.Dock="Top">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition Width="120"/>
+            </Grid.ColumnDefinitions>
+
+            <Border Grid.Column="1"
+                    Background="Red"
+                    Margin="10"
+                    CornerRadius="4"
+                    MinHeight="30"
+                    MinWidth="90"
+                    MouseEnter="Border_MouseEnter"
+                    MouseLeave="Border_MouseLeave"
+                    MouseLeftButtonDown="Border_MouseLeftButtonDown">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="30"/>
+                        <ColumnDefinition/>
+                    </Grid.ColumnDefinitions>
+                    <Image Source="https://i.pinimg.com/originals/d4/af/7e/d4af7e27876cab3a9616bc9aabb0a193.jpg"
+                           Height="25"
+                           Stretch="Fill"/>
+                    <TextBlock Text="Exit"
+                               Grid.Column="1"
+                               TextAlignment="Center"
+                               VerticalAlignment="Center"
+                               FontWeight="DemiBold"
+                              
+                               Foreground="White"
+                               />
+                </Grid>
+            </Border>
+        </Grid>
+
+        <Grid 
+               Background="#FF1D1B1B"
+               Width="250"
+               DockPanel.Dock="Right">
+            <Grid.RowDefinitions>
+                <RowDefinition Height ="50"/>
+                <RowDefinition/>
+                <RowDefinition Height="50"/>
+            </Grid.RowDefinitions>
+            <TextBlock Text="Chat"
+                       TextAlignment="Center"
+                       Foreground="White"
+                       VerticalAlignment="Center"
+                       FontSize="20"/>
+            <ListBox Grid.Row="1"
+                     Background="Transparent">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                    </Grid.RowDefinitions>
+                    <TextBlock Grid.Column="1"
+                               Grid.Row="0"
+                               Text="LastName Name MiddleName 20:10"
+                               FontSize="9"
+                               Foreground="#FF939292"/>
+                    <Border Grid.Column="1"
+                               Grid.Row="1"
+                                Background="#FF353131"
+                            Margin="5"
+                            Padding="5"
+                            CornerRadius="4 4 4 0"
+                            MaxWidth="200">
+                    <TextBlock  Text="Message"
+                                TextWrapping="WrapWithOverflow"
+                                TextAlignment="Justify"
+                                Foreground="White"
+                                Margin="10 0 0 0"/>
+                       
+                    </Border>
+                    <Border Grid.Column="0"
+                            Grid.Row="1"
+                            Width="25"
+                            Height="25"
+                           
+                            CornerRadius="90"
+                            VerticalAlignment="Top"
+                            Margin="0 5 -15 0"
+                            BorderThickness="2"
+                            BorderBrush="White">
+                        <Border.Background>
+                            <ImageBrush ImageSource="https://media.springernature.com/lw703/springer-static/image/art%3A10.1038%2F540500a/MediaObjects/41586_2016_Article_BF540500a_Figi_HTML.jpg?as=webp" />
+                        </Border.Background>
+
+                    </Border>
+                </Grid>
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                    </Grid.RowDefinitions>
+                    <TextBlock Grid.Column="1"
+                Grid.Row="0"
+                Text="LastName Name MiddleName 20:10"
+                FontSize="9"
+                Foreground="#FF939292"/>
+                    <Border Grid.Column="1"
+                Grid.Row="1"
+                 Background="#FF353131"
+             Margin="5"
+             Padding="5"
+             CornerRadius="4 4 4 0"
+             MaxWidth="200">
+                        <TextBlock  Text="Message"
+                 TextWrapping="WrapWithOverflow"
+                 TextAlignment="Justify"
+                 Foreground="White"
+                 Margin="10 0 0 0"/>
+
+                    </Border>
+                    <Border Grid.Column="0"
+             Grid.Row="1"
+             Width="25"
+             Height="25"
+            
+             CornerRadius="90"
+             VerticalAlignment="Top"
+             Margin="0 5 -15 0"
+             BorderThickness="2"
+             BorderBrush="White">
+                        <Border.Background>
+                            <ImageBrush ImageSource="https://media.springernature.com/lw703/springer-static/image/art%3A10.1038%2F540500a/MediaObjects/41586_2016_Article_BF540500a_Figi_HTML.jpg?as=webp" />
+                        </Border.Background>
+
+                    </Border>
+                </Grid>
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                    </Grid.RowDefinitions>
+                    <TextBlock Grid.Column="1"
+                Grid.Row="0"
+                Text="LastName Name MiddleName 20:10"
+                FontSize="9"
+                Foreground="#FF939292"/>
+                    <Border Grid.Column="1"
+                Grid.Row="1"
+                 Background="#FF353131"
+             Margin="5"
+             Padding="5"
+             CornerRadius="4 4 4 0"
+             MaxWidth="200">
+                        <TextBlock  Text="Message"
+                 TextWrapping="WrapWithOverflow"
+                 TextAlignment="Justify"
+                 Foreground="White"
+                 Margin="10 0 0 0"/>
+
+                    </Border>
+                    <Border Grid.Column="0"
+             Grid.Row="1"
+             Width="25"
+             Height="25"
+            
+             CornerRadius="90"
+             VerticalAlignment="Top"
+             Margin="0 5 -15 0"
+             BorderThickness="2"
+             BorderBrush="White">
+                        <Border.Background>
+                            <ImageBrush ImageSource="https://media.springernature.com/lw703/springer-static/image/art%3A10.1038%2F540500a/MediaObjects/41586_2016_Article_BF540500a_Figi_HTML.jpg?as=webp" />
+                        </Border.Background>
+
+                    </Border>
+                </Grid>
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                    </Grid.RowDefinitions>
+                    <TextBlock Grid.Column="1"
+                Grid.Row="0"
+                Text="LastName Name MiddleName 20:10"
+                FontSize="9"
+                Foreground="#FF939292"/>
+                    <Border Grid.Column="1"
+                Grid.Row="1"
+                 Background="#FF353131"
+             Margin="5"
+             Padding="5"
+             CornerRadius="4 4 4 0"
+             MaxWidth="200">
+                        <TextBlock  Text="Message"
+                 TextWrapping="WrapWithOverflow"
+                 TextAlignment="Justify"
+                 Foreground="White"
+                 Margin="10 0 0 0"/>
+
+                    </Border>
+                    <Border Grid.Column="0"
+             Grid.Row="1"
+             Width="25"
+             Height="25"
+            
+             CornerRadius="90"
+             VerticalAlignment="Top"
+             Margin="0 5 -15 0"
+             BorderThickness="2"
+             BorderBrush="White">
+                        <Border.Background>
+                            <ImageBrush ImageSource="https://media.springernature.com/lw703/springer-static/image/art%3A10.1038%2F540500a/MediaObjects/41586_2016_Article_BF540500a_Figi_HTML.jpg?as=webp" />
+                        </Border.Background>
+
+                    </Border>
+                </Grid>
+            </ListBox>
+            <Border Background="#FF353131"
+                    Margin="10"
+                    MaxWidth="300"
+                    Padding="4" 
+                    CornerRadius="10"
+                    Grid.Row="2">
+                <TextBox FontSize="18"
+                         Foreground="White"
+                         BorderThickness="0"
+                         Background="#FF353131"/>
+            </Border>
+        </Grid>
+        
+        <Grid  Background="#FF322D2D"> 
+            <WrapPanel
+                 MinWidth="200"
+                 HorizontalAlignment="Center"
+                 VerticalAlignment="Center">
+                <StackPanel>
+                    <Border Height="150"
+                             Width="150"
+                             Margin="15" 
+                             CornerRadius="90">
+                        <Border.Background>
+                            <ImageBrush ImageSource="https://media.springernature.com/lw703/springer-static/image/art%3A10.1038%2F540500a/MediaObjects/41586_2016_Article_BF540500a_Figi_HTML.jpg?as=webp"
+                                        Stretch="Fill"/>
+                        </Border.Background>
+                    </Border>
+                    <!--<Image Source=""></Image>-->
+                    <TextBlock Text="Name"
+                    Foreground="White"
+                    FontSize="14"
+                    TextAlignment="Center"/>
+                </StackPanel>
+                <StackPanel>
+                    <Border Height="150"
+     Width="150"
+     Margin="15"
+     Background="Green"
+     CornerRadius="90">
+
+                    </Border>
+                    <!--<Image Source=""></Image>-->
+                    <TextBlock Text="Name"
+        Foreground="White"
+        FontSize="14"
+        TextAlignment="Center"/>
+                </StackPanel>
+                <StackPanel>
+                    <Border Height="150"
+     Width="150"
+     Margin="15"
+     Background="Green"
+     CornerRadius="90">
+
+                    </Border>
+                    <!--<Image Source=""></Image>-->
+                    <TextBlock Text="Name"
+        Foreground="White"
+        FontSize="14"
+        TextAlignment="Center"/>
+                </StackPanel>
+                <StackPanel>
+                    <Border Height="150"
+     Width="150"
+     Margin="15"
+     Background="Green"
+     CornerRadius="90">
+
+                    </Border>
+                    <!--<Image Source=""></Image>-->
+                    <TextBlock Text="Name"
+        Foreground="White"
+        FontSize="14"
+        TextAlignment="Center"/>
+                </StackPanel>
+            </WrapPanel>
+        </Grid>
+       
+
+
+    </DockPanel>
+</Window>
